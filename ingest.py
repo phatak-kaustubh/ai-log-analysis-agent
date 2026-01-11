@@ -1,7 +1,6 @@
-
 import csv
-from langchain.embeddings import HuggingFaceEmbeddings
-from langchain.vectorstores import Chroma
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_community.vectorstores import Chroma
 
 DATA_PATH = "data/sample_logs.csv"
 DB_PATH = "chroma_db"
@@ -35,3 +34,4 @@ def ingest_logs():
 
 if __name__ == "__main__":
     ingest_logs()
+
