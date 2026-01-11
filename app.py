@@ -5,6 +5,11 @@ from langchain_community.vectorstores import Chroma
 from transformers import pipeline
 
 DB_PATH = "chroma_db"
+import os
+
+if not os.path.exists("chroma_db"):
+    from ingest import ingest_logs
+    ingest_logs()
 
 # Load embeddings + vector DB
 embeddings = HuggingFaceEmbeddings(
