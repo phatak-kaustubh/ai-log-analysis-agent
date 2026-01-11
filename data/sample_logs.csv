@@ -1,0 +1,6 @@
+incident_id,service,region,error_message,root_cause,resolution
+INC-101,auth-service,us-east-1,Connection timeout to DB,Database overload,Scale DB and restart service
+INC-102,order-service,eu-west-1,NullPointerException in OrderHandler,Missing order_id validation,Add null check and redeploy
+INC-103,payment-service,ap-south-1,SSL handshake failed,Expired certificate,Renew certificate
+INC-104,inventory-service,us-east-1,OutOfMemoryError during sync,Large batch size,Reduce batch size
+INC-105,shipping-service,eu-central-1,HTTP 503 from carrier API,External API downtime,Retry with backoff
