@@ -1,9 +1,9 @@
 # ---- UI ----
 gradio==4.44.0
 
-# ---- HF core (let Spaces manage hub) ----
-transformers>=4.45.0
-sentence-transformers>=2.7.0
+# ---- HF / MODEL STACK (COMPATIBLE SET) ----
+transformers==4.41.2
+sentence-transformers==2.7.0
 torch==2.1.2
 
 # ---- RAG ----
